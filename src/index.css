@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter');
+@import url('https://fonts.googleapis.com/css2?family=Lora');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata');
+
+:root{
+  --black: #050505;
+  --almost-black: #1f1f1f;
+  --darker-gray: #2D2D2D;
+  --dark-gray: #3A3A3A;
+  --gray: #757575;
+  --light-gray: #E9E9E9;
+  --ligther-gray: #f4f4f4;
+  --white: #fff;
+  --purple: #A445ED;
+  --red: #FF5252;
+  --inter: 'Inter', sans-serif;
+  --lora: 'Lora', sans-serif;
+  --inconsolata: 'Inconsolata', sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  height: 100vh;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  padding: 58px;
+}
+
+h1, h2, h3, h4, h5{
+  font-weight: 700;
+}
+
+p{
+  font-weight: 400;
+}
+
+a{
+  color: inherit;
+}
+
+a:visited{
+  color: inherit;
+}
+
+ul{
+  list-style-type: none;
+}
+
+#root{
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 51.5px;
+}

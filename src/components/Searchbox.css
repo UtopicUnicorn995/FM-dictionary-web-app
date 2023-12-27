@@ -1,0 +1,34 @@
+
+.input-group {
+    width: 100%;
+    position: relative;
+}
+
+.input-group input{
+    width: 100%;
+    padding: 20px 24px;
+    border-radius: 16px;
+    background-color: var(--light-gray);
+    border: none;
+    outline: none;
+
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.input-group input:focus{
+    outline: 1px solid var(--purple);
+}
+
+.input-group label{
+    width: 20px;
+    height: 20px;
+
+    position: absolute;
+    right: 24px;
+    top: 24px;
+}
+
+input{
+    caret-color: var(--purple);
+}
