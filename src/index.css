@@ -55,8 +55,20 @@ ul{
 
 #root{
   width: 100%;
-  max-width: 1440px;
+  max-width: 737px;
   display: flex;
   flex-direction: column;
   row-gap: 51.5px;
+}
+
+#root.sansserif *{
+  font-family: var(--inter);
+}
+
+#root.serif *{
+  font-family: var(--lora);
+}
+
+#root.mono *{
+  font-family: var(--inconsolata);
 }

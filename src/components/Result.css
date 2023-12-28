@@ -1,0 +1,30 @@
+
+
+.result-header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.result-header__container button{
+    border: none;
+    background-color: var(--white);
+}
+
+.result-header__container button:hover img{
+    cursor: pointer;
+    content: url(../assets/images/icon-play-active.svg);
+}
+
+.result-header__container h1{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    font-size: 64px;
+}
+
+.result-header__container h1 span{
+    color: var(--purple);
+    font-size: 24px;
+    font-weight: 400;
+}

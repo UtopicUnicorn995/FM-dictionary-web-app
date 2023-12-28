@@ -1,17 +1,18 @@
-import { useState } from 'react'
-import './App.css'
-
+import { useState, useEffect } from 'react'
 import Header from './components/Header'
 import Dictionary from './components/Dictionary'
 
 function App() {
-  const [fontSyle, setFontStyle] = useState('Sans Serif')
+  const [fontStyle, setFontStyle] = useState('Sans Serif')
   const [isDarkMode, setIsDarkMode] = useState(false)
 
+  useEffect(() => {
+    document.getElementById('root').className = fontStyle.split(" ").join('').toLowerCase();
+  }, [fontStyle]);
 
   return (
     <>
-     <Header fontSelected={fontSyle} onChangeFont={setFontStyle} mode={isDarkMode} modeHandler={setIsDarkMode}/>
+     <Header fontSelected={fontStyle} onChangeFont={setFontStyle} mode={isDarkMode} modeHandler={setIsDarkMode}/>
      <Dictionary/>
     </>
   )

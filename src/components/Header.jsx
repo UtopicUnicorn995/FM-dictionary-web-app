@@ -16,13 +16,13 @@ export default function Header({fontSelected, onChangeFont, mode, modeHandler}) 
             {fontSelected}
           </button>
           <ul className="dropdown-menu">
-            <li onClick={() => onChangeFont('Sans Serif')}>
+            <li onClick={() => {onChangeFont('Sans Serif'); setShowDropdown(prev => !prev) }}>
                 Sans Serif
             </li>
-            <li onClick={() => onChangeFont('Serif')}>
+            <li onClick={() => {onChangeFont('Serif'); setShowDropdown(prev => !prev) }}>
                 Serif
             </li>
-            <li onClick={() => onChangeFont('Mono')}>
+            <li onClick={() => {onChangeFont('Mono'); setShowDropdown(prev => !prev) }}>
                 Mono
             </li>
           </ul>

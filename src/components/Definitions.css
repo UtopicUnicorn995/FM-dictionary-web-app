@@ -1,0 +1,24 @@
+
+.definitions{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.line-container{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.line-container h2{
+    font-style: italic;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.line-container .line{
+    width: 100%;
+    height: 1px;
+    background-color: var(--light-gray);
+}
