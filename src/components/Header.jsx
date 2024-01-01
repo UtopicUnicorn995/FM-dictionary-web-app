@@ -29,7 +29,7 @@ export default function Header({fontSelected, onChangeFont, mode, modeHandler}) 
         </div>
         <div className="divider"></div>
         <div className="color-mode">
-            <div className={`switch-container ${mode && 'dark'}`} onClick={() => modeHandler(prev => !prev)}>
+            <div className={'switch-container'} onClick={() => {modeHandler(prev => !prev)}}>
                 <div className="switch"></div>
             </div>
             <img src={mode ? moonIconActive : moonIcon} className='moon' alt="" />

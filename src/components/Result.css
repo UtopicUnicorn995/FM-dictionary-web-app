@@ -16,6 +16,19 @@
     content: url(../assets/images/icon-play-active.svg);
 }
 
+.dark .result-header__container button{
+    background-color: var(--black);
+}
+
+.dark .result-header__container button img{
+    content: url(../assets/images/icon-play.svg);
+}
+
+.dark .result-header__container button:hover img{
+    cursor: pointer;
+    content: url(../assets/images/icon-play-active.svg);
+}
+
 .result-header__container h1{
     display: flex;
     flex-direction: column;

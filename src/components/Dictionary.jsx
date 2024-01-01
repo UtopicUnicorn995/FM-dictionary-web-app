@@ -30,7 +30,7 @@ export default function Dictionary() {
 
   return (
     <div className="dictionary">
-      <Searchbox searchHandler={setSearchValue} onClickHandler={handleSearch} />
+      <Searchbox searchHandler={setSearchValue} value={searchValue} onClickHandler={handleSearch} />
       {results}
     </div>
   );

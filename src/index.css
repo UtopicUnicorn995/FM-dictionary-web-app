@@ -25,7 +25,7 @@
 }
 
 
-body{
+#root{
   height: 100vh;
   background-color: var(--white);
   display: flex;
@@ -53,7 +53,7 @@ ul{
   list-style-type: none;
 }
 
-#root{
+.main-container{
   width: 100%;
   max-width: 737px;
   display: flex;
@@ -71,4 +71,9 @@ ul{
 
 #root.mono *{
   font-family: var(--inconsolata);
+}
+
+#root.dark{
+  background-color: var(--black);
+  color: var(--white)
 }

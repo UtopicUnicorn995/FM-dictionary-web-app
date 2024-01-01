@@ -16,6 +16,10 @@
     font-weight: 700;
 }
 
+.dark .input-group input{
+    background-color: var(--almost-black);
+}
+
 .input-group input:focus{
     outline: 1px solid var(--purple);
 }
