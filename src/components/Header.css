@@ -70,6 +70,13 @@ header{
     z-index: 2;
 }
 
+
+ .dropdown.active .dropdown-menu{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 500ms ease-in-out;
+}
+
 .dark .dropdown button{
     color: var(--white);
 }

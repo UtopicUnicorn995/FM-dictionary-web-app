@@ -18,6 +18,7 @@
 
 .dark .input-group input{
     background-color: var(--almost-black);
+    color: var(--white);
 }
 
 .input-group input:focus{

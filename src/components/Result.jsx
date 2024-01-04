@@ -40,7 +40,7 @@ export default function Result({ resultInformation }) {
       <h1>{resultInformation["word"]} <span>{resultInformation['phonetic']}</span></h1>
       {renderAudioButton}
     </div>
-    <Definitions/>
+    <Definitions meanings={resultInformation['meanings']}/>
     <div className="synonyms-container">
         <p>Synonyms <span>electronic keyboard</span></p>
     </div>

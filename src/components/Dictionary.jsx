@@ -18,9 +18,11 @@ export default function Dictionary() {
       .then((response) => response.json())
       .then((datas) => {
         const newResults = Array.isArray(datas)
-          ? datas.map((data, index) => (
+          ? 
+          datas.map((data, index) => (
                <Result key={index} resultInformation={data} />
             ))
+            // <Result resultInformation={datas[0]} />
           : [<WordNotFound key="notFound" />];
 
         setResults(newResults);
