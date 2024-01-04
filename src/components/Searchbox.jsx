@@ -6,7 +6,9 @@ export default function Searchbox({searchHandler, value, onClickHandler}){
         <div className="input-group">
             <input value={value} type="text" name="searchBox" id="searchBox" onChange={(event) => searchHandler(event.target.value)}/>
             <label htmlFor="searchBox" onClick={onClickHandler}>
+                <button>
                 <img src={searchIcon} alt="" />
+                </button>
             </label>
         </div>
     )

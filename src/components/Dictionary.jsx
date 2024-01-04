@@ -13,7 +13,10 @@ export default function Dictionary() {
     handleSearch();
   }, []);
 
-  const handleSearch = () => {
+  const handleSearch = (event) => {
+    if(event){
+      event.preventDefault()
+    }
     fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${searchValue}`)
       .then((response) => response.json())
       .then((datas) => {
@@ -31,9 +34,9 @@ export default function Dictionary() {
   };
 
   return (
-    <div className="dictionary">
+    <form className="dictionary" onSubmit={handleSearch}>
       <Searchbox searchHandler={setSearchValue} value={searchValue} onClickHandler={handleSearch} />
       {results}
-    </div>
+    </form>
   );
 }

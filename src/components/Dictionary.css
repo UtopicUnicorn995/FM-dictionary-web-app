@@ -3,3 +3,37 @@
     flex-direction: column;
     row-gap: 40px;
 }
+
+.meanings-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.meanings-container h3{
+    color: var(--gray);
+    font-size: 20px;
+}
+
+.meanings-container ul{
+    padding: 0 0 0 47px;
+    
+    display: flex;
+    flex-direction: column;
+    row-gap: 13px;
+}
+
+.meanings-container ul li{
+    font-size: 18px;
+}
+
+
+.meanings-container ul li:before{
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: var(--purple); /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 25px; /* Also needed for space (tweak if needed) */
+    margin-left: -25px;
+    
+}

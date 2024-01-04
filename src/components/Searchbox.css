@@ -37,6 +37,10 @@
     transition: scale 500ms ease-in;
 }
 
+.input-group button{
+    border: none;
+}
+
 .input-group label:hover{
     cursor: pointer;
     scale: 1.02;

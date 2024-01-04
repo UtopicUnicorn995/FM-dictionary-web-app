@@ -12,8 +12,8 @@ export default function Definitions({meanings}) {
       <div className="meanings-container">
         <h3>Meaning</h3>
         <ul>
-            {itemMeaning['definitions'].map(meaning => (
-             <li>{meaning['definition']}</li>
+            {itemMeaning['definitions'].map((meaning, index) => (
+             <li key={index}>{meaning['definition']}</li>
           ))}
         </ul>
       </div>
