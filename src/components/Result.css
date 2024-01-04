@@ -41,3 +41,25 @@
     font-size: 24px;
     font-weight: 400;
 }
+
+.source-container{
+    padding-top: 20px;
+    border-top: 1px solid var(--light-gray);
+    font-size: 14px;
+
+    display: flex;
+    column-gap: 25px;
+}
+
+.source-container p{
+    color: var(--gray);
+    text-decoration: underline;
+}
+
+.source-container span{
+    text-decoration: underline;
+}
+
+.dark .source-container{
+    border-color: var(--dark-gray);
+}

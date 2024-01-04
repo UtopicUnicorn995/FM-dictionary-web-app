@@ -39,7 +39,16 @@
 
 .input-group button{
     border: none;
+    background-color: transparent;
 }
+
+
+.input-group button:hover{
+    cursor: pointer;
+    scale: 1.02;
+    transition: scale 500ms ease-out;
+}
+
 
 .input-group label:hover{
     cursor: pointer;

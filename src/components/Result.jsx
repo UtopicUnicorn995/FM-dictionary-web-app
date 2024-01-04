@@ -34,6 +34,7 @@ export default function Result({ resultInformation }) {
         </button>
       );
 
+      console.log(resultInformation)
   return (
     <>
     <div className="result-header__container">
@@ -41,8 +42,10 @@ export default function Result({ resultInformation }) {
       {renderAudioButton}
     </div>
     <Definitions meanings={resultInformation['meanings']}/>
-    <div className="synonyms-container">
-        <p>Synonyms <span>electronic keyboard</span></p>
+    <div className="source-container">
+      <p>Source</p> <a href={resultInformation['sourceUrls'][0]} target='_blank'>
+      {resultInformation['sourceUrls'][0]}
+      </a>
     </div>
     </>
   );
