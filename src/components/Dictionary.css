@@ -13,6 +13,7 @@
 .meanings-container h3{
     color: var(--gray);
     font-size: 20px;
+    font-weight: 400;
 }
 
 .meanings-container ul{
@@ -36,4 +37,22 @@
     width: 25px; /* Also needed for space (tweak if needed) */
     margin-left: -25px;
     
+}
+
+@media (max-width: 426px) {
+    .dictionary{
+        row-gap: 28px;
+    }
+    .meanings-container{
+        row-gap: 17px;
+    }
+    .meanings-container h3{
+        font-size: 16px;
+    }
+    .meanings-container ul{
+        padding-left: 24px;
+    }
+    .meanings-container ul li{
+        font-size: 15px;
+    }
 }

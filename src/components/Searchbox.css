@@ -59,3 +59,14 @@
 input{
     caret-color: var(--purple);
 }
+
+
+@media (max-width: 426px) {
+    .input-group input{
+        font-size: 16px;
+        padding: 16px 24px;
+    }
+    .input-group label{
+        top: 13px;
+    }
+}

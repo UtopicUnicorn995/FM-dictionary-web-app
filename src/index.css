@@ -59,7 +59,7 @@ ul{
   max-width: 737px;
   display: flex;
   flex-direction: column;
-  row-gap: 51.5px;
+  row-gap: 32px;
 }
 
 #root.sansserif *{
@@ -77,4 +77,13 @@ ul{
 #root.dark{
   background-color: var(--black);
   color: var(--white)
+}
+
+@media (max-width: 426px) {
+  #root{
+    padding: 24px;
+  }
+  .main-container{
+    row-gap: 24px;
+  }
 }

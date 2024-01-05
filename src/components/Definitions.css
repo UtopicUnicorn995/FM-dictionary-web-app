@@ -48,3 +48,15 @@
     font-weight: 700;
     color: var(--purple);
 }
+
+@media (max-width: 426px) {
+    .definitions{
+        row-gap: 31px;
+    }
+    .line-container{
+        column-gap: 25px;
+    }
+    .line-container h2{
+        font-size: 18px;
+    }
+}

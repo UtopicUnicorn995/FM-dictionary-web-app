@@ -63,3 +63,20 @@
 .dark .source-container{
     border-color: var(--dark-gray);
 }
+
+@media (max-width: 426px) {
+    .result-header__container h1{
+        font-size: 32px;
+    }
+    .result-header__container button img{
+        width: 48px;
+        height: 48px;
+    }
+    .result-header__container h1 span{
+        font-size: 18px;
+    }
+    .source-container{
+        flex-direction: column;
+        row-gap: 10px;
+    }
+}

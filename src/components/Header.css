@@ -149,3 +149,22 @@ header{
     justify-content: space-between;
     width: 80px;
 }
+
+@media (max-width: 426px) {
+    .header-group{
+        column-gap: 16px;
+    }
+
+    .color-mode{
+        width: 72px;
+    }
+    .dropdown button{
+        font-size: 14px;
+    }
+    .dropdown .dropdown-menu{
+        width: 132px;
+    }
+    .dropdown-menu li{
+        font-size: 14px;
+    }
+}
