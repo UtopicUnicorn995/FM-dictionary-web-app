@@ -22,10 +22,10 @@ function App() {
 
   return (
     <>
-    <div className="main-container">
+    <main className="main-container">
      <Header fontSelected={fontStyle} onChangeFont={setFontStyle} mode={isDarkMode} modeHandler={setIsDarkMode}/>
      <Dictionary/>
-    </div>
+    </main>
     </>
   )
 }

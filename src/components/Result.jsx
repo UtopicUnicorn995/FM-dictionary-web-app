@@ -29,9 +29,9 @@ export default function Result({ resultInformation }) {
     audio.play();
   };
     const renderAudioButton = audioUrl && (
-        <button onClick={handlePlay} disabled={isPlaying}>
+        <div onClick={handlePlay} disabled={isPlaying} className='audio-btn'>
           <img src={audioIcon} alt="" />
-        </button>
+        </div>
       );
 
       console.log(resultInformation)
